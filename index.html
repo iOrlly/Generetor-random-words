@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arrey of words</title>
+</head>
+<body>
+    <div id="accordian">
+        <details>
+            <summary>English Nivel</summary>
+            <p onclick="showWords('A1')" id="wordListA1" class="options">A1</p>
+            <p onclick="showWords('A2')" id="wordListA2" class="options">A2</p>
+            <p onclick="showWords('B1')" id="wordListB1" class="options">B1</p>
+        </details>
+    </div>
+    <div class="container">
+        <h1>Arrey of words</h1>
+        <h3 id="tituloNivelAtual" style="color: #555;">Nível Selecionado: A1</h3>
+        <button onclick="refreshWords()" id="refreshButton">Refresh Words</button>
+        <p id="wordList"></p>
+    </div>
+
+    <script src="arrey.js"></script>
+</body>
+</html>
